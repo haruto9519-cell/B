@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="高校保健 04 ゴミの処理と上下水道の整備">
+<title>04 ゴミの処理と上下水道の整備｜高校保健</title>
+<style>
+:root{--navy:#10243a;--blue:#2477a8;--aqua:#dff3f4;--ink:#182635;--muted:#617181;--paper:#f4f7fa;--gold:#e5b95c}
+*{box-sizing:border-box}body{margin:0;background:#0b1726;color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif}
+.deck{min-height:100svh;display:grid;place-items:center;padding:24px 18px 88px}
+.slide{display:none;width:min(100%,1000px);min-height:min(68svh,650px);background:white;border-radius:24px;padding:clamp(26px,5vw,64px);box-shadow:0 24px 70px #0005;position:relative;overflow:hidden}
+.slide.active{display:flex;flex-direction:column;justify-content:center;animation:in .25s ease}
+@keyframes in{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}
+.slide:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:var(--aqua);right:-100px;top:-115px;z-index:0}
+.slide>*{position:relative;z-index:1}
+.kicker{color:var(--blue);font-weight:800;letter-spacing:.12em;font-size:.85rem}
+h1{font-size:clamp(2.2rem,6vw,4.6rem);line-height:1.22;margin:18px 0;color:var(--navy)}
+h2{font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.3;color:var(--navy);margin:12px 0 24px}
+p{font-size:clamp(1.02rem,2vw,1.25rem);line-height:1.85;margin:8px 0}
+.lead{font-size:clamp(1.15rem,2.5vw,1.5rem);color:var(--muted);max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+.card{background:#f1f6f9;border:1px solid #e0e9ef;border-radius:16px;padding:20px}
+.card b{display:block;color:var(--blue);font-size:1.12rem;margin-bottom:7px}
+ul{padding-left:1.3em;margin:8px 0}li{font-size:clamp(1rem,1.8vw,1.18rem);line-height:1.8;margin:5px 0}
+.callout{border-left:5px solid var(--gold);background:#fff8e8;padding:15px 18px;border-radius:8px;margin-top:18px;font-weight:650;line-height:1.7}
+.flow{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:28px 0}
+.flow span{background:#eaf4f8;border:1px solid #cfe3ec;border-radius:12px;padding:15px 18px;font-weight:750}
+.flow i{font-style:normal;color:var(--blue);font-size:1.5rem;font-weight:900}
+.small{font-size:.92rem;color:var(--muted)}
+.controls{position:fixed;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:16px;padding:14px;background:#0b1726eF;color:white;z-index:5}
+button{border:0;border-radius:999px;background:#fff;color:var(--navy);font-weight:800;padding:11px 20px;font-size:1rem;cursor:pointer}
+button:disabled{opacity:.35;cursor:not-allowed}.count{min-width:76px;text-align:center;font-variant-numeric:tabular-nums}
+.progress{position:fixed;top:0;left:0;height:5px;background:var(--gold);width:0;z-index:6;transition:width .2s}
+@media(max-width:620px){.deck{padding:12px 10px 82px}.slide{min-height:76svh;border-radius:18px;padding:28px 22px}.grid{grid-template-columns:1fr;gap:10px}.card{padding:15px}.controls{gap:10px;padding:12px 8px}button{padding:10px 15px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<main class="deck" aria-live="polite">
+<section class="slide active">
+<div class="kicker">高校保健｜環境と健康</div>
+<h1>04 ゴミの処理と<br>上下水道の整備</h1>
+<p class="lead">私たちの生活から出るゴミや排水は、どのように処理され、健康や環境を守っているのだろう？</p>
+<div class="callout">この授業のポイント：衛生的な生活を支える仕組みと、私たちにできることを理解する。</div>
+<p class="small" style="margin-top:24px">← → キー、または下のボタンでスライドを移動</p>
+</section>
+<section class="slide">
+<div class="kicker">01｜ゴミと健康</div><h2>なぜゴミを処理するの？</h2>
+<p>家庭や学校、会社などから毎日たくさんのゴミが出る。放置すると、悪臭や害虫の発生、病原体の広がり、景観の悪化などにつながる。</p>
+<div class="grid">
+<div class="card"><b>健康を守る</b>害虫や病原体が増えにくい環境をつくる。</div>
+<div class="card"><b>環境を守る</b>水・土・空気への汚染を防ぐ。</div>
+<div class="card"><b>資源を守る</b>使えるものを再利用し、資源の消費を減らす。</div>
+<div class="card"><b>暮らしを守る</b>街を清潔に保ち、安全で快適に暮らせるようにする。</div>
+</div>
+</section>
+<section class="slide">
+<div class="kicker">02｜ゴミの処理の流れ</div><h2>集めて、分けて、処理する</h2>
+<div class="flow"><span>家庭・事業所</span><i>→</i><span>分別・排出</span><i>→</i><span>収集・運搬</span><i>→</i><span>処理施設</span></div>
+<ul><li>燃やせるゴミ：焼却施設などで処理し、量を減らす。</li><li>燃やせないゴミ：素材や性質に応じて処理する。</li><li>資源ゴミ：びん・缶・紙・プラスチックなどを回収し、再資源化する。</li></ul>
+<div class="callout">分別方法や収集日は自治体によって異なる。地域のルールを確認することが大切。</div>
+</section>
+<section class="slide">
+<div class="kicker">03｜3R</div><h2>ゴミを減らす「3R」</h2>
+<div class="grid">
+<div class="card"><b>Reduce｜リデュース</b>ゴミそのものを減らす。必要な分だけ買う、使い捨てを減らす。</div>
+<div class="card"><b>Reuse｜リユース</b>くり返し使う。詰め替え容器や譲り合い、修理して使う。</div>
+<div class="card"><b>Recycle｜リサイクル</b>資源として再利用する。分別して回収に出す。</div>
+<div class="card"><b>優先順位</b>まず発生を減らし、次にくり返し使い、最後に資源として再利用する。</div>
+</div>
+<p class="small">3Rは、限りある資源を大切にし、環境への負担を小さくする考え方。</p>
+</section>
+<section class="slide">
+<div class="kicker">04｜水道の役割</div><h2>安全な水を届ける「上水道」</h2>
+<p>上水道は、川やダムなどの水を浄水場できれいにし、家庭や学校などへ届ける仕組み。</p>
+<div class="flow"><span>水源</span><i>→</i><span>浄水場</span><i>→</i><span>配水池・水道管</span><i>→</i><span>蛇口</span></div>
+<ul><li>浄水場では、沈でん・ろ過・消毒などを行う。</li><li>水質基準に適合するよう、水質を検査・管理する。</li><li>安全な水の供給は、感染症の予防や生活の衛生に欠かせない。</li></ul>
+</section>
+<section class="slide">
+<div class="kicker">05｜下水道の役割</div><h2>使った水をきれいにする「下水道」</h2>
+<p>家庭や工場などから出た汚水を集め、下水処理場できれいにしてから、川や海などへ戻す仕組み。</p>
+<div class="flow"><span>家庭・工場</span><i>→</i><span>下水管</span><i>→</i><span>下水処理場</span><i>→</i><span>川・海など</span></div>
+<ul><li>汚れやごみを取り除き、微生物の働きなどを利用して水を浄化する。</li><li>汚水を適切に処理することで、水環境や公衆衛生を守る。</li><li>雨水を排水する仕組みは、浸水被害の軽減にも役立つ。</li></ul>
+</section>
+<section class="slide">
+<div class="kicker">06｜上下水道が整っていないと</div><h2>生活や健康への影響</h2>
+<div class="grid">
+<div class="card"><b>飲み水の問題</b>安全な水を確保しにくくなり、水を介した感染症のリスクが高まる。</div>
+<div class="card"><b>汚水の問題</b>生活排水が適切に処理されず、川や海などの水質に影響する。</div>
+<div class="card"><b>衛生環境の悪化</b>悪臭や害虫などが発生しやすくなる。</div>
+<div class="card"><b>災害時の課題</b>断水や下水道の停止で、トイレや衛生の確保が難しくなる。</div>
+</div>
+</section>
+<section class="slide">
+<div class="kicker">07｜私たちにできること</div><h2>毎日の小さな行動が大切</h2>
+<ul><li>地域のルールに従ってゴミを分別する。</li><li>食べ残しや使い捨てを減らす。</li><li>油や薬品などをむやみに排水口へ流さない。</li><li>水を出しっぱなしにせず、節水を心がける。</li><li>災害に備えて、飲料水や衛生用品を準備する。</li></ul>
+<div class="callout">ゴミ処理と上下水道は、施設だけで成り立つものではない。利用する一人ひとりの協力も必要。</div>
+</section>
+<section class="slide">
+<div class="kicker">08｜まとめ</div><h2>今日の重要ポイント</h2>
+<div class="grid">
+<div class="card"><b>ゴミ処理</b>適切に収集・処理し、健康被害や環境汚染を防ぐ。</div>
+<div class="card"><b>3R</b>Reduce・Reuse・Recycleでゴミと資源の消費を減らす。</div>
+<div class="card"><b>上水道</b>水を浄化して、安全な水を届ける。</div>
+<div class="card"><b>下水道</b>使った水を処理して、水環境と衛生を守る。</div>
+</div>
+<div class="callout">確認問題：①3Rを3つ答えよう。②上水道と下水道の役割の違いを説明しよう。</div>
+</section>
+<section class="slide">
+<div class="kicker">参考・確認</div><h2>学習のまとめ</h2>
+<p>ゴミの適正処理と上下水道の整備は、感染症の予防、生活環境の保全、快適な暮らしを支える重要な社会基盤である。</p>
+<ul>
+<li><a href="https://www.env.go.jp/recycle/" target="_blank" rel="noopener">環境省｜廃棄物・リサイクル対策</a></li>
+<li><a href="https://www.mlit.go.jp/mizukokudo/sewerage/" target="_blank" rel="noopener">国土交通省｜下水道</a></li>
+<li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics/bukyoku/kenkou/suido/" target="_blank" rel="noopener">厚生労働省｜水道</a></li>
+</ul>
+<p class="small">※授業用の概要スライド。教科書の文章を転載したものではなく、基本事項を整理した内容です。地域や制度の詳細は自治体・関係機関の最新情報を確認してください。</p>
+</section>
+</main>
+<nav class="controls" aria-label="スライド操作">
+<button id="prev" type="button">← 前へ</button><span class="count" id="count">1 / 10</span><button id="next" type="button">次へ →</button>
+</nav>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let n=0;
+const count=document.getElementById('count'),progress=document.getElementById('progress'),prev=document.getElementById('prev'),next=document.getElementById('next');
+function show(i){n=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,k)=>s.classList.toggle('active',k===n));count.textContent=(n+1)+' / '+slides.length;progress.style.width=((n+1)/slides.length*100)+'%';prev.disabled=n===0;next.disabled=n===slides.length-1}
+prev.addEventListener('click',()=>show(n-1));next.addEventListener('click',()=>show(n+1));
+document.addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();show(n+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(n-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)});
+let startX=0;document.querySelector('.deck').addEventListener('touchstart',e=>startX=e.changedTouches[0].clientX,{passive:true});document.querySelector('.deck').addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-startX;if(Math.abs(d)>55)show(n+(d<0?1:-1))},{passive:true});
+show(0);
+</script>
+</body></html>
